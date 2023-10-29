@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta content="IE=edge" http-equiv="X-UA-Compatible">
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+    <title>ALL Labs by Ossama</title>
+    <link rel="icon" href="/content/images/logos/favicon.ico" type="image/x-icon" />
+    <link href="/content/pswebsecacademy.css" rel="stylesheet" type="text/css">
+    <style>
+        hr {
+            color: orange; /* Color of the line */
+            background-color: orange; /* Background color behind the line */
+            height: 10px; /* Height of the line */
+            margin: 10px 10px; /* Margin above and below the line */
+            border: none; /* Remove the default border */
+        }
+        .code-scrollable {
+            width: 900px; /* Set the fixed width for the code block */
+            white-space: nowrap; /* Prevent text from wrapping to the next line */
+            overflow-x: auto; /* Enable horizontal scrolling if content overflows */
+            border: 1px solid #ccc; /* Optional: Add a border for clarity */
+            padding: 10px; /* Optional: Add padding for spacing */
+        }
+    </style>
+</head>
+
+<body class="theme-">
+    <div class="wrapper-large">
+        {{ content }}
+    </div>
+    <script type="text/javascript">
+        var _paq = _paq || [];
+        _paq.push(['setTrackingSource', 'jstc_tm']);
+        _paq.push(['enableLinkTracking']);
+        _paq.push(['setIpTracking', true]);
+        _paq.push(['setDomains', ['portswigger.net']]);
+        _paq.push(['setCustomDimensionValue', 1, '']);
+        _paq.push(['setCustomDimensionValue', 2, '']);
+        _paq.push(['setCustomDimensionValue', 3, '']);
+        _paq.push(['setCustomDimensionValue', 4, '']);
+        _paq.push(['setCustomDimensionValue', 5, '']);
+        var userId = '' ? '' : false;
+        if (userId) {
+            _paq.push(['setUserId', userId]);
+        }
+        _paq.push(['trackPageView']);
+        (function (p, i, w, ik) {
+            var g = ik.createElement('script'), s = ik.getElementsByTagName('script')[0];
+            _paq.push(['setTrackerUrl', p]);
+            _paq.push(['setSiteId', w]);
+            g.type = 'text/javascript'; g.async = true; g.defer = true; g.src = i; s.parentNode.insertBefore(g, s);
+        })('https://ps.piwik.pro/ppms.php', 'https://ps.containers.piwik.pro/ppms.js', '287552c2\u002D4917\u002D42e0\u002D8982\u002Dba994a2a73d7', document)
+    </script>
+    <script type="text/javascript">
+            (function (a, n, r) { function o(e) { var t; !function (e) { try { e.contentWindow.location.href } catch (e) { return 1 } }(e) ? setTimeout(function () { o(e) }, 500) : (t = new YT.Player(e, { events: { onStateChange: c } }), e.setAttribute("data-listener-attached", !0), t.lastAction = "i") } function i(e) { return "function" == typeof e.getCurrentTime ? e.getCurrentTime() : e.playerInfo.currentTime } function s(e, t) { n._paq = n._paq || [], n._paq.push(["trackEvent", "Video - YouTube", t, ("function" == typeof (t = e).getVideoData ? t.getVideoData() : t.playerInfo.videoData).title, i(e).toFixed()]) } function c(e) { var t = e.target; e.data === YT.PlayerState.PLAYING && setTimeout(u, 1e3, t), e.data === YT.PlayerState.PLAYING && (-1 < ["i", "p"].indexOf(t.lastAction) && s(t, "i" === t.lastAction ? "Play" : "Resume"), t.lastAction = ""), e.data === YT.PlayerState.PAUSED && (s(t, "Pause"), t.lastAction = "p"), e.data === YT.PlayerState.ENDED && (s(t, "Watched"), t.lastAction = "i") } function u(e) { var t, a, n, o; ("function" == typeof (t = e).getPlayerState ? t.getPlayerState() : t.playerInfo.playerState) === YT.PlayerState.PLAYING && r.trackThresholds && (t = r.thresholdsToTrack, o = e, o = Math.round(i(o) / ("function" == typeof (o = o).getDuration ? o.getDuration() : o.playerInfo.duration) * 100), n = o, o = t, (a = e).passedThresholds = a.passedThresholds || [], o.forEach(function (e) { !a.passedThresholds.includes(e) && e < n && (a.passedThresholds.push(e), s(a, "Progress - " + e + "%")) }), setTimeout(u, 1e3, e)) } function e() { a.querySelectorAll("iframe").forEach(function (e) { var t, a; /youtube.*\/embed/.test(e.src) && !e.getAttribute("data-listener-attached") && (-1 === (a = (t = e).src).indexOf("enablejsapi=") && (a += (-1 === a.indexOf("?") ? "?" : "&") + "enablejsapi=1"), -1 === a.indexOf("origin=") && (a += (-1 === a.indexOf("?") ? "?" : "&") + "origin=" + encodeURIComponent(location.origin)), t.src = a, o(e)) }) } function t(e) { var t; n.MutationObserver && (t = a.getElementsByTagName("body")[0], new MutationObserver(e).observe(t, { childList: !0, attributes: !1, subtree: !0 })) } var d, l, f; Boolean(n.YT) ? (e(), t(e)) : (d = n.onYouTubeIframeAPIReady, n.onYouTubeIframeAPIReady = function () { "function" == typeof d && d(), e(), t(e) }, l = a.createElement("script"), f = a.getElementsByTagName("script")[0], l.src = "//www.youtube.com/iframe_api", l.async = !0, f.parentNode.insertBefore(l, f)) })
+            (document, window, {
+                trackThresholds: 0,
+                thresholdsToTrack: []
+            });
+    </script>
+</body>
+
+</html>
